@@ -10,8 +10,8 @@ import img5 from '../assets/5.png';
 
 const extracss = {
   pos: 'absolute',
-  left: '50%',
-  top: '50%',
+  left: '30%',
+  top: '30%',
   tranform: 'translate(-50%,-50%)',
   textTransform: 'uppercase',
   p: '4',
@@ -78,7 +78,7 @@ const MyCarousel = () => (
     showArrows={false}
   >
     <Box w="full" h={'100vh'}>
-      <Image src={img1} />
+      <Image src={img1}  />
       <Heading bgColor={'blackAlpha.600'} color={'white'} {...extracss}>
         Watch The Future
       </Heading>
