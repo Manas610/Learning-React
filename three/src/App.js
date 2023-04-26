@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Header";
-import Home from "./Home";
-import Coins from "./Coins";
-import Exchanges from "./Exchanges";
-import CoinDetails from "./CoinDetails";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Coins from "./components/Coins";
+import Exchanges from "./components/Exchanges";
+import CoinDetails from "./components/CoinDetails";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/exchanges" element={<Exchanges />} />
         <Route path="/coins/:id" element={<CoinDetails />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
