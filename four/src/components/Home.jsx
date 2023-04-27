@@ -14,21 +14,21 @@ const Home = () => {
 
   const addToCartHandler = (options) => {
     console.log(options);
-    toast.success("Added To Cart")
+    toast.success("Added To Cart");
   };
 
   return (
     <div className="Home">
       {productList.map((i) => (
-          <ProductCard
-            key={i.id}
-            imgSrc={i.imgSrc}
-            name={i.name}
-            id={i.id}
-            price={i.price}
-            handler={addToCartHandler}
-          />
-        ))}
+        <ProductCard
+          key={i.id}
+          imgSrc={i.imgSrc}
+          name={i.name}
+          id={i.id}
+          price={i.price}
+          handler={addToCartHandler}
+        />
+      ))}
     </div>
   );
 };
